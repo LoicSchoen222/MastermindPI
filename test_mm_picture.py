@@ -33,12 +33,31 @@ def circleclick(poso, post, color):
     cc.circle(20)
     cc.end_fill()
     
-
+def getcolor(x, y):
+    print("getcolor: ", x ,y)
+    if x > -183 and x < -143 and y > -303 and y < -263:
+        return "pink"
+    elif x > -133 and x < -93 and y > -303 and y < -263:
+        return "white"
+    elif x > -83 and x < -43 and y > -303 and y < -263:
+        return "red"
+    elif x > -33 and x < 6 and y > -303 and y < -263:
+        return "yellow"
+    elif x > 23 and x < 63 and y > -303 and y < -263:
+        return "orange"
+    elif x > 73 and x < 113 and y > -303 and y < -263:
+        return "green"
+    elif x > 123 and x < 163 and y > -303 and y < -263:
+        return "blue"
+    elif x > 173 and x < 213 and y > -303 and y < -263:
+        return "gray"
+    return "no color"
 
 
                   
 def f(x, y):
-    print(x, y)
+    color = getcolor(x, y)
+    print(color)
 
 def drawcircle(pos, color, size):
     cc.up()
@@ -73,7 +92,7 @@ circleclick(193, -303, "gray")
  #   for t in range(4):
   #      drawcircle(pinResultTable[i][t], "red", 5)
 
-#screen.onclick(f)
+screen.onclick(f)
 screen.mainloop()
 
 print("done")
