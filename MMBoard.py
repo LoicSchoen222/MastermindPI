@@ -4,19 +4,30 @@ from MMRow import MMRow
 
 class MMBoard:
     def __init__(self):
-        self.numberOfRows = 10
+        self.numberOfRows = 8
         self.currentRow = 0
         self.rows = []
         self.finalRow = None
         for i in range(self.numberOfRows):
             self.rows += ('', '', '', '')
 
-    def setFinalRow(self, row):
-        self.finalRow = row
-
     def addRow(self, row=('', '', '', '')):
+        if self.currentRow == self.numberOfRows:
+            print("MMBoard: number of maximum rows (%d) reached" % self.numberOfRows)
+            return False
+
+        if not MMRow(row).validate():
+            print("MMBoard: invalid row. All colors must be differents")
+            return False
+
         self.rows[self.currentRow] = row
         self.currentRow += 1
+
+    def getcurrentrow(self):
+        return self.currentRow
+
+    def setFinalRow(self, row):
+        self.finalRow = MMRow(row)
 
     def show(self):
         print("Board: number of rows (%d), current row (%d)" % (self.numberOfRows, self.currentRow))

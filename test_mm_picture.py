@@ -18,8 +18,8 @@ pinColorTable = [((-34, -173), (2, -173), (37, -172), (72, -173)),
 pinResultTable = [((-83, -173), (-69, -173), (), ()),
                   ((), (), (), ())]
 
-def f(x, y):
-    print(x, y)
+def f_onclick(x, y):
+    print("OnClick: ", x, y)
 
 def drawcircle(pos, color, size):
     cc.up()
@@ -41,7 +41,7 @@ drawcircle(pinColorTable[0][0], "green", 10)
 #drawcircle(-83, -120, "red", 4)
 #drawcircle(-69, -120, "red", 4)
 
-screen.onclick(f)
+screen.onclick(f_onclick)
 screen.mainloop()
 
 print("done")
