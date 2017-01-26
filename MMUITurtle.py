@@ -8,6 +8,7 @@ class MMUITurtle:
         self.board = None
         self.pincolorSize = 11
         self.currentLine = []
+        self.drawing = False
         self.pincolorTable =   [((-34, -173), (2, -173),  (37, -172), (72, -173)),   #First line from bottom
                                 ((-34, -132), (-1, -132), (37, -132), (72, -132)),   #Second line from bottom
                                 ((-34, -93),  (2, -93),   (37, -93),  (72, -93)),
@@ -38,7 +39,6 @@ class MMUITurtle:
     def display(self):
         self.tt.hideturtle()
         self.screen.bgpic("./data/mm_board.gif")
-        self.screen.onclick(self.onclick)
         self.circleclick(-163, -303, "pink")
         self.circleclick(-113, -303, "white")
         self.circleclick(-63, -303, "red")
@@ -47,6 +47,7 @@ class MMUITurtle:
         self.circleclick(93, -303, "green")
         self.circleclick(143, -303, "blue")
         self.circleclick(193, -303, "gray")
+        self.screen.onclick(self.onclick)
         self.screen.mainloop()
 
     def drawcircle(self, pos, color, size):
@@ -57,6 +58,18 @@ class MMUITurtle:
         self.tt.begin_fill()
         self.tt.circle(size)
         self.tt.end_fill()
+
+    def drawpin(self, x, y):
+        color = self.getcolor(x, y)
+        if color != None:
+            line = self.board.getcurrentrow()
+            print("Position on board: ", line, len(self.currentLine))
+
+            self.drawcircle(self.pincolorTable[line][len(self.currentLine)], color, self.pincolorSize)
+            self.currentLine.append(color)
+            if len(self.currentLine) == 4:
+                self.board.addRow(self.currentLine)
+                self.currentLine = []
 
     def getcolor(self, x, y):
         print("getcolor: ", x ,y)
@@ -76,18 +89,13 @@ class MMUITurtle:
             return "blue"
         elif x > 173 and x < 213 and y > -303 and y < -263:
             return "gray"
-        return "no color"
+        return None
 
     def onclick(self, x, y):
-        color = self.getcolor(x, y)
-        line = self.board.getcurrentrow()
-        print("Position on board: ", line, len(self.currentLine))
-
-        self.drawcircle(self.pincolorTable[line][len(self.currentLine)], color, self.pincolorSize)
-        self.currentLine.append(color)
-        if len(self.currentLine) == 4:
-            self.board.addRow(self.currentLine)
-            self.currentLine = []
+        if self.drawing == False:
+            self.drawing = True
+            self.drawpin(x, y)
+            self.drawing = False
 
     def setboard(self, board):
         self.board = board
