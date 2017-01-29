@@ -14,14 +14,26 @@ class MMBoard:
     def addRow(self, row=('', '', '', '')):
         if self.currentRow == self.numberOfRows:
             print("MMBoard: number of maximum rows (%d) reached" % self.numberOfRows)
-            return False
+            return None
 
         if not MMRow(row).validate():
             print("MMBoard: invalid row. All colors must be differents")
-            return False
+            return None
 
         self.rows[self.currentRow] = row
         self.currentRow += 1
+        result = self.finalRow.compare(row)
+        if result != None:
+            stringResult = []
+            for i in range(result[0]):
+                stringResult.append("red")
+            for i in range(result[1]):
+                stringResult.append("white")
+            return stringResult
+        else:
+            return result
+
+
 
     def getcurrentrow(self):
         return self.currentRow

@@ -68,7 +68,8 @@ class MMUITurtle:
             self.drawcircle(self.pincolorTable[line][len(self.currentLine)], color, self.pincolorSize)
             self.currentLine.append(color)
             if len(self.currentLine) == 4:
-                self.board.addRow(self.currentLine)
+                result = self.board.addRow(self.currentLine)
+                print("MMUITurtle result = ", result)
                 self.currentLine = []
 
     def getcolor(self, x, y):

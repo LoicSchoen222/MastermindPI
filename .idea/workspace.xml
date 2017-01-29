@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6c4e1676-2a59-4796-8cf3-8b7f23fa78f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MMBoard.py" afterPath="$PROJECT_DIR$/MMBoard.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MMUITurtle.py" afterPath="$PROJECT_DIR$/MMUITurtle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mastermind.py" afterPath="$PROJECT_DIR$/mastermind.py" />
     </list>
     <ignored path="MasterMind.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +40,8 @@
       <file leaf-file-name="MMRow.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MMRow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,8 +50,8 @@
       <file leaf-file-name="MMBoard.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MMBoard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -67,31 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MMUITurtle.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MMUITurtle.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MMUITurtle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="722">
+              <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="turtle.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/turtle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45662">
-              <caret line="2695" column="0" lean-forward="false" selection-start-line="2695" selection-start-column="0" selection-end-line="2695" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mastermind.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mastermind.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mastermind.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -125,13 +117,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/MMController.py" />
-        <option value="$PROJECT_DIR$/MMRow.py" />
         <option value="$PROJECT_DIR$/MMUI.py" />
         <option value="$PROJECT_DIR$/TestTurtle.py" />
         <option value="$PROJECT_DIR$/test_mm_picture.py" />
-        <option value="$PROJECT_DIR$/mastermind.py" />
-        <option value="$PROJECT_DIR$/MMBoard.py" />
         <option value="$PROJECT_DIR$/MMUITurtle.py" />
+        <option value="$PROJECT_DIR$/mastermind.py" />
+        <option value="$PROJECT_DIR$/MMRow.py" />
+        <option value="$PROJECT_DIR$/MMBoard.py" />
       </list>
     </option>
   </component>
@@ -897,24 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mastermind.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/turtle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45662">
-          <caret line="2695" column="0" lean-forward="false" selection-start-line="2695" selection-start-column="0" selection-end-line="2695" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_mm_picture.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
@@ -923,18 +897,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/turtle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="2695" column="0" lean-forward="false" selection-start-line="2695" selection-start-column="0" selection-end-line="2695" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MMRow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MMBoard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="468">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -943,9 +925,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MMUITurtle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="722">
+          <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mastermind.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

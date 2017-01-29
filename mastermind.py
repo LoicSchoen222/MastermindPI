@@ -5,6 +5,7 @@ import MMUITurtle
 class Mastermind:
     def __init__(self):
         self.board = MMBoard.MMBoard()
+        self.board.setFinalRow(("gray", "green", "yellow", "pink"))
         self.ui = MMUITurtle.MMUITurtle()
         self.ui.setboard(self.board)
 
