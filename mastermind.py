@@ -1,11 +1,14 @@
 import MMBoard
 import MMUITurtle
-
+import random
 
 class Mastermind:
     def __init__(self):
         self.board = MMBoard.MMBoard()
-        self.board.setFinalRow(("gray", "green", "yellow", "pink"))
+        choice = random.sample(["pink", "white", "red", "yellow", "orange", "green", "blue", "gray"], 4)
+        #print(choice)
+        self.board.setFinalRow(choice)
+        #self.board.setFinalRow(("pink", "orange", "green", "gray"))
         self.ui = MMUITurtle.MMUITurtle()
         self.ui.setboard(self.board)
 
@@ -18,3 +21,4 @@ if __name__ == '__main__':
 
     # Start to play!
     mm.start()
+

@@ -7,6 +7,7 @@ class MMUITurtle:
         self.screen = Screen()
         self.board = None
         self.pincolorSize = 11
+        self.pinresultSize = 5
         self.currentLine = []
         self.drawing = False
         self.pincolorTable =   [((-34, -173), (2, -173),  (37, -172), (72, -173)),   #First line from bottom
@@ -70,7 +71,13 @@ class MMUITurtle:
             if len(self.currentLine) == 4:
                 result = self.board.addRow(self.currentLine)
                 print("MMUITurtle result = ", result)
+                self.drawpinresult(line, result)
                 self.currentLine = []
+
+    def drawpinresult(self, line, result):
+        for l in range(len(result)):
+            self.drawcircle(self.pinResultTable[line][l], result[l], self.pinresultSize)
+
 
     def getcolor(self, x, y):
         print("getcolor: ", x ,y)
